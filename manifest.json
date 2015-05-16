@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "CS: Google Keys",
+  "version": "1.0",
+  "description": "A Cities: Skylines inspired keymapping for Google maps.",
+  "content_scripts": [
+    {
+      "matches": ["https://www.google.com/maps/*"],
+      "js": [
+        "content_scripts/jquery.js",
+        "content_scripts/mapkeys.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ]
+}
